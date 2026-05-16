@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huzaifa Shoaib | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Is code ko apni index.html ke <head> tag ke andar paste karein -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><linearGradient id=%22g%22 x1=%220%%22 y1=%220%%22 x2=%22100%%22 y2=%22100%%22><stop offset=%220%%22 stop-color=%22%2300f2fe%22/><stop offset=%22100%%22 stop-color=%22%239d4ede%22/></linearGradient><path d=%22M30,30 L15,50 L30,70 M70,30 L85,50 L70,70 M45,75 L55,25%22 fill=%22none%22 stroke=%22url(%23g)%22 stroke-width=%2210%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
+    <!-- Font Awesome CDN Links for Social Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+<header>
+  <div class="container">
+    
+    <!-- 1. Brand Logo Block -->
+    <div class="logo">
+      <span class="logo-text">Huzaifa Shoaib</span>
+    </div>
+
+    <!-- 2. Desktop & Mobile Navigation Menu (Updated with Skills & Services) -->
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- 3. Dynamic Controls Wrapper -->
+    <div class="header-controls">
+      <!-- Theme Switcher -->
+      <div class="theme-switcher">
+        <label for="theme-toggle" class="switch-label">
+          <input
+            type="checkbox"
+            id="theme-toggle"
+            class="switch-checkbox"
+            aria-label="Toggle between light and dark theme"
+          />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section id="hero">
+  <canvas id="cosmic-canvas"></canvas>
+  <div class="container hero-wrapper">
+    
+    <!-- Left Side: Professional Text Content -->
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="gradient-text">Huzaifa Shoaib</span></h1>
+      <p class="hero-subtitle">Full-Stack Developer & AI Specialist</p>
+      <p>Specializing in full-stack web platforms, cross-platform mobile development, and intelligent AI systems, I leverage hyper-focused engineering cycles to deliver secure, production-ready digital products.</p>
+      
+      <!-- Premium Balanced Dual-Button CTA Grid -->
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        
+        <!-- Google Drive Preview Link with Native Icon -->
+        <a href="https://drive.google.com/file/d/103m7mTEbYrT5yuiGAGS8ypARj-fwdWtY/preview" class="btn-secondary" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-google-drive" style="margin-right: 8px;"></i>View CV
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Side: Interactive Profile Picture Frame -->
+    <div class="hero-image-container">
+      <div class="profile-card-frame">
+        <!-- Apni image ka path yahan list karein (e.g., assets/my-pic.jpg ya image URL) -->
+        <img src="/images/me.png" alt="Huzaifa Shoaib" class="profile-img" />
+        <div class="glow-layer"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+
+    <div class="about-content">
+      <div class="about-image">
+        <img
+          src="./images/profile-picture.jpg"
+          class="about-me-image"
+          alt="Huzaifa Shoaib - Full-Stack & Mobile Application Engineer"
+        />
+      </div>
+      
+      <div class="about-text">
+        <!-- Short Intro -->
+        <div class="about-section-block">
+          <p>
+            Hi, I'm <strong>Huzaifa Shoaib</strong>, a Full-Stack Developer and Mobile Application Engineer based in Gujranwala, Pakistan. I build high-performance web ecosystems and fluid, native-feeling mobile applications that turn complex engineering problems into clean, intuitive digital experiences.
+          </p>
+        </div>
+
+        <!-- My Journey -->
+        <div class="about-section-block">
+          <p>
+            Started my engineering path focusing heavily on building pixel-perfect responsive frontends with HTML, CSS, and modern JavaScript. Driven by curiosity, I scaled my skill set into full-stack architecture, mastering <strong>React.js</strong> and database management systems, while simultaneously expanding into cross-platform mobile environments using <strong>React Native</strong>.
+          </p>
+        </div>
+
+        <!-- What Makes Me Different -->
+        <div class="about-section-block">
+          <p>
+            I don't just build layouts; I secure and optimize them. From deploying ultra-fast serverless architecture with <strong>Cloudflare Workers</strong> to obfuscate and secure proprietary API keys, to building modular authentication setups using <strong>Firebase</strong>, I focus heavily on asset protection, performance budgets, and clean, scalable code patterns.
+          </p>
+        </div>
+
+        <!-- Current Focus -->
+        <div class="about-section-block">
+          <p>
+            Deepening expertise in edge computing pipelines, advanced relational database optimization, and implementing smart AI engine abstractions to make daily web tools more intuitive and autonomous.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS & TECH STACK ================= -->
+<section id="skills">
+  <div class="container">
+    <h2>Skills & Tech Stack</h2>
+<p class="section-subtitle">Crafting secure, high-performance <span class="highlight-text">scalable systems</span> from frontend to core architecture.</p>
+    <div class="skills-grid">
+      <!-- Card 1: Frontend Infrastructure -->
+      <div class="skill-card">
+        <div class="card-icon-frame">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+        </div>
+        <h3>Frontend Core</h3>
+        <ul class="skill-list">
+          <li>React.js Framework</li>
+          <li>React Native (Mobile)</li>
+          <li>JavaScript (ES6+)</li>
+          <li>HTML5 & CSS3 Semantic</li>
+          <li>Responsive Interface Design</li>
+        </ul>
+      </div>
+
+      <!-- Card 2: Backend Systems -->
+      <div class="skill-card">
+        <div class="card-icon-frame">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" height="20" width="20" y="2" rx="2" ry="2"/><path d="M2 12h20 M12 2v20"/></svg>
+        </div>
+        <h3>Backend & Logic</h3>
+        <ul class="skill-list">
+          <li>Python Core Development</li>
+          <li>Node.js Execution</li>
+          <li>Firebase Authentication Engine</li>
+          <li>RESTful API Architecture</li>
+          <li>Modular Code Design</li>
+        </ul>
+      </div>
+
+      <!-- Card 3: Database Architectures -->
+      <div class="skill-card">
+        <div class="card-icon-frame">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+        </div>
+        <h3>Databases</h3>
+        <ul class="skill-list">
+          <li>PostgreSQL Enterprise</li>
+          <li>MySQL Relational</li>
+          <li>SQLite Modular Storage</li>
+          <li>Firebase Firestore Data</li>
+          <li>Relational Schema Mapping</li>
+        </ul>
+      </div>
+
+      <!-- Card 4: Automation & Security -->
+      <div class="skill-card">
+        <div class="card-icon-frame">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3>Automation & Edge</h3>
+        <ul class="skill-list">
+          <li>Cloudflare Workers Scripting</li>
+          <li>API Key Obfuscation Security</li>
+          <li>Workflow Automation Tasks</li>
+          <li>Source Code Guard Isolation</li>
+          <li>Netlify & Modern CI/CD</li>
+        </ul>
+      </div>
+
+      <!-- Card 5: AI Tools Integration -->
+      <div class="skill-card">
+        <div class="card-icon-frame">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4 M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83 M2 12h4M18 12h4 M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+        </div>
+        <h3>AI Tools Abstraction</h3>
+        <ul class="skill-list">
+          <li>Groq AI Engine Execution</li>
+          <li>LLM API Pipeline Processing</li>
+          <li>Smart Context Injection</li>
+          <li>Prompt Strategy Pipelines</li>
+          <li>AI-Driven Application Logic</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="container">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+      
+      <!-- Card 1: Smart AI Quiz System -->
+      <div class="project-card">
+        <div class="project-image-wrapper">
+          <img src="/images/project-placeholder-1.jpg" alt="Smart AI Quiz System" class="project-image" />
+        </div>
+        <div class="project-info">
+          <h3>Smart AI Quiz System</h3>
+          <p>An intelligent, responsive quiz platform driven by the Groq API for dynamic question generation and optimized evaluation metrics.</p>
+          
+          <!-- Draggable Tech Stack Container -->
+          <div class="project-tech-sandbox">
+            <span class="tech-tag" draggable="true">Groq API</span>
+            <span class="tech-tag" draggable="true">JavaScript</span>
+            <span class="tech-tag" draggable="true">HTML5</span>
+            <span class="tech-tag" draggable="true">CSS3</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Firebase Auth Ecosystem -->
+      <div class="project-card">
+        <div class="project-image-wrapper">
+          <img src="/images/project-placeholder-2.jpg" alt="Firebase Authentication System" class="project-image" />
+        </div>
+        <div class="project-info">
+          <h3>Firebase Secure Auth</h3>
+          <p>A full-stack user management framework integrated with Gmail OAuth, state management dashboards, and encrypted reset loops.</p>
+          
+          <div class="project-tech-sandbox">
+            <span class="tech-tag" draggable="true">Firebase</span>
+            <span class="tech-tag" draggable="true">React.js</span>
+            <span class="tech-tag" draggable="true">Node.js</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Cloudflare Edge Layer -->
+      <div class="project-card">
+        <div class="project-image-wrapper">
+          <img src="/images/project-placeholder-3.jpg" alt="Cloudflare Worker Integration" class="project-image" />
+        </div>
+        <div class="project-info">
+          <h3>Cloudflare Edge Gateway</h3>
+          <p>A secure serverless architecture utilizing Cloudflare Workers to obfuscate backend endpoints and protect proprietary API configurations.</p>
+          
+          <div class="project-tech-sandbox">
+            <span class="tech-tag" draggable="true">Cloudflare</span>
+            <span class="tech-tag" draggable="true">API Security</span>
+            <span class="tech-tag" draggable="true">Workers</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ==========================================================================
+     PREMIUM 3D ENGINE SERVICES LAYER
+     ========================================================================== -->
+<section id="services">
+  <div class="services-container">
+    
+    <h2 class="services-title">Technical <span class="highlight-text">Capabilities</span></h2>  
+<p class="services-subtitle">Deploying high-performance automated frameworks calibrated for enterprise scale.</p>
+
+    <div class="services-grid">
+
+      <!-- Card 1: AI Automation & Chatbots -->
+      <div class="service-3d-card" data-tilt>
+        <div class="card-glow-layer"></div>
+        <div class="card-content">
+          <div class="service-icon-box cyan-glow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 7.54 16.59c-.44.47-.64 1.12-.54 1.76l.39 2.5a.5.5 0 0 1-.74.53l-2.12-1.22a2 2 0 0 0-1.64-.17 10 10 0 1 1-2.89-20z"/><path d="M8 11h.01"/><path d="M16 11h.01"/><path d="M12 16a4 4 0 0 1-3.18-1.5"/></svg>
+          </div>
+          <h3>AI Automation & Chatbots</h3>
+          <p>Integrating Groq, OpenAI, and Gemini engines to deploy intelligent agents, multi-turn vector architectures, and automated customer success loops.</p>
+          
+          <!-- Mini Workflow Preview -->
+          <div class="workflow-preview">
+            <div class="workflow-track"></div>
+            <div class="workflow-step active"><span>Prompt</span></div>
+            <div class="workflow-step"><span>LLM Core</span></div>
+            <div class="workflow-step"><span>Output</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Full-Stack Web Applications -->
+      <div class="service-3d-card" data-tilt>
+        <div class="card-glow-layer"></div>
+        <div class="card-content">
+          <div class="service-icon-box purple-glow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y1="21"/><line x1="12" y1="17" x2="12" y1="21"/></svg>
+          </div>
+          <h3>Full-Stack Web Apps</h3>
+          <p>Building high-performance web systems using React.js and modern serverless nodes. Structured from fluid user journeys to robust cloud storage databases.</p>
+          
+          <!-- Mini Workflow Preview -->
+          <div class="workflow-preview">
+            <div class="workflow-track"></div>
+            <div class="workflow-step active"><span>UI/UX</span></div>
+            <div class="workflow-step"><span>State</span></div>
+            <div class="workflow-step"><span>DB Sync</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Hybrid Mobile Applications -->
+      <div class="service-3d-card" data-tilt>
+        <div class="card-glow-layer"></div>
+        <div class="card-content">
+          <div class="service-icon-box cyan-glow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+          </div>
+          <h3>Mobile Apps Development</h3>
+          <p>Architecting cross-platform native smartphone experiences using React Native frameworks. Delivering consistent 60fps renders and complex local caching.</p>
+          
+          <!-- Mini Workflow Preview -->
+          <div class="workflow-preview">
+            <div class="workflow-track"></div>
+            <div class="workflow-step active"><span>Native</span></div>
+            <div class="workflow-step"><span>Bridge</span></div>
+            <div class="workflow-step"><span>Render</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Secure API Integrations -->
+      <div class="service-3d-card" data-tilt>
+        <div class="card-glow-layer"></div>
+        <div class="card-content">
+          <div class="service-icon-box purple-glow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          </div>
+          <h3>Secure API Systems</h3>
+          <p>Configuring custom RESTful pipelines and reverse proxy scripts. Protecting computational keys using Cloudflare Worker edge functions and rate limit protections.</p>
+          
+          <!-- Mini Workflow Preview -->
+          <div class="workflow-preview">
+            <div class="workflow-track"></div>
+            <div class="workflow-step active"><span>Request</span></div>
+            <div class="workflow-step"><span>Worker</span></div>
+            <div class="workflow-step"><span>Payload</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5: Next-Gen Auth Architectures -->
+      <div class="service-3d-card" data-tilt>
+        <div class="card-glow-layer"></div>
+        <div class="card-content">
+          <div class="service-icon-box cyan-glow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3>Authentication Systems</h3>
+          <p>Implementing enterprise access matrixes. Deploying reliable Firebase schemas, secure credential registrations, and cryptographically safe password configurations.</p>
+          
+          <!-- Mini Workflow Preview -->
+          <div class="workflow-preview">
+            <div class="workflow-track"></div>
+            <div class="workflow-step active"><span>Validate</span></div>
+            <div class="workflow-step"><span>JWT Sign</span></div>
+            <div class="workflow-step"><span>Access</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <p>Have a question or want to work together? Feel free to reach out!</p>
+
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/mjglnkbz"
+          method="POST"
+        >
+          <div>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div>
+            <label for="message">message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Your message"
+              required
+            ></textarea>
+          </div>
+          <div id="form-status"></div>
+
+          <button type="Submit" class="btn">Send message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container footer-wrapper">
+    
+    <!-- Left Section: Brand & Quick Tagline -->
+    <div class="footer-brand">
+      <h3 class="logo-text">Huzaifa<span> Shoaib</span></h3>
+      <p class="footer-tagline">
+        Building scalable digital ecosystems, high-performance mobile architectures, and intelligent custom AI integrations.
+      </p>
+    </div>
+
+    <!-- Center Section: Operational Availability Info -->
+    <div class="footer-status">
+      <h4>Current Status</h4>
+      <p><span class="status-indicator"></span> Available for Freelance Projects & Remote Roles</p>
+      <p class="footer-location"><i class="fas fa-map-marker-alt"></i> Gujranwala, Pakistan</p>
+    </div>
+
+    <!-- Right Section: Social Connect & Links Grid -->
+    <div class="footer-socials">
+  <h4>Connect & Follow</h4>
+  <p class="social-text">Let's build something exceptional together.</p>
+  <ul class="footer-links-list">
+    <li>
+      <a
+        href="https://github.com/huzaifashoaib03"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="View my profile on GitHub"
+      >
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.linkedin.com/in/huzaifashoaib03/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Connect with me on LinkedIn"
+      >
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://instagram.com/huzaifashoaib03/?hl=en"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit my Instagram profile"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+    <!-- Facebook Premium Core Link Added Below -->
+    <li>
+      <a
+        href="https://www.facebook.com/h.huzaifa.bin.shoaib"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Connect with me on Facebook"
+      >
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+
+  <!-- Bottom Bar: Copyright & Terms Protection -->
+  <div class="footer-bottom">
+    <div class="container bottom-flex">
+      <p>&copy; 2026 Huzaifa Shoaib. All Rights Reserved.</p>
+      <p class="footer-credit">Engineered with Passion & Clean Code</p>
+    </div>
+  </div>
+</footer>
+    <!-- Floating Social Icons Dock -->
+<ul class="social-icons">
+  <li><a href="https://wa.me/+923258804572" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
+  <li>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=siratemustaqeem03@gmail.com" target="_blank" aria-label="Email">
+    <i class="fa-solid fa-envelope"></i>
+  </a>
+</li>
+</ul>
+  </body>
+</html>
